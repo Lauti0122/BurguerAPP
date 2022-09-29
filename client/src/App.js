@@ -1,10 +1,20 @@
+import React from "react";
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Home from "./components/Home/Home.jsx"
+import Footer from "./components/Footer/Footer.jsx";
+import Header from "./components/Header/Header.jsx"
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Henry Videogames</h1>
-    </div>
+    <React.Fragment>
+      <Switch>
+        <Route exact path="/home"><Header/><Home/><Footer/></Route>
+      </Switch>
+    </React.Fragment>
   );
 }
 
