@@ -3,9 +3,8 @@ POST  http://localhost:4000/burgers
 Content-Type: application/json
 
 {
-    "name": "",
-    "description": "",
-    "price": ,
-    "image":"",
-
+    "name": "GRAND TASTY TURBO BACON",
+    "description": "Mansa burger",
+    "price": 1500 ,
+    "images":"https://telefe-static2.akamaized.net/media/435385/grand-tasty-1-e1627506211463.jpg?width=888&height=500&mode=crop"
 }

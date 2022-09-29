@@ -7,5 +7,6 @@ const burger = require('./burger');
 module.exports = router;
 
 router.use(express.json());
-router.use('/burger', burger);
+
+router.use('/burgers', burger);
 
