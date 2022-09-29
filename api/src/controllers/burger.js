@@ -3,7 +3,7 @@ const {Burger} = require("../db");
 const postBurger = async (req, res) => {
     const { name, price, description,images} = req.body;
 
-    if (!name || !price || !description || images) return res.status(400).json({ message: "Missing data" });
+    if (!name || !price || !description || !images) return res.status(400).json({ message: "Missing data" });
 
     const burgerExists = await Burger.findOne({ where: { name }});
     if (burgerExists) return res.status(400).json({ message: "Burger already exists" });
