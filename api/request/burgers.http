@@ -1,0 +1,11 @@
+### Burger 1
+POST  http://localhost:4000/burgers
+Content-Type: application/json
+
+{
+    "name": "",
+    "description": "",
+    "price": ,
+    "image":"",
+
+}

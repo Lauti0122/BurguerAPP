@@ -1,0 +1,9 @@
+POST  http://localhost:4000/drinks
+Content-Type: application/json
+
+{
+    "name": "Coca-cola",
+    "price": ,
+    "image":"",
+    "size":""
+}
